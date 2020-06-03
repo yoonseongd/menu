@@ -16,9 +16,12 @@ const windowWidth = Dimensions.get("window").width;
 const videoheight = (windowWidth * 651) / 1157;
 
 class Food extends React.Component {
+  constructor(props) {
+    super(props);
+  }
   render() {
-    const { screenProps } = this.props;
-    console.log(screenProps.nav);
+    const todayFood = this.props;
+    console.log(this.props);
     return (
       <LinearGradient colors={["#4b79a1", "#283e51"]} style={styles.container}>
         <StatusBar barStyle={"light-content"} />
