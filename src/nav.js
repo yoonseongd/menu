@@ -50,7 +50,6 @@ class Nav extends React.Component {
     } //componentdidmount로 데이터를 json으로 받아오고 timePassed가 true되어 componentdidmount가 끝나서 각 컨텐츠 별로의 object 얻어 왔다. 자 이 각각의 데이터를 이제 각 라우터에 전달하자.
 
     return (
-      console.log(todayFood)
       <NavigationContainer>
         <Tab.Navigator
           initialRouteName="Home"
@@ -88,7 +87,6 @@ class Nav extends React.Component {
           />
           <Tab.Screen
             name="제철 음식"
-            props={}
             component={Food}
             options={{
               tabBarLabel: "제철 음식",
