@@ -8,8 +8,10 @@ const navReducer = (state = initailState, action) => {
   switch (action.type) {
     case GET_ITEMS:
       return {
-        items: [...state.items, action.items],
+        ...state.items,
+        items: action.items,
       };
+
     default:
       return state;
   }
